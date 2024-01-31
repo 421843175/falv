@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<style>
+    
+</style>
+<link rel="stylesheet" th:href="@{/css/body.css}">
+
+<body>
+<div th:include="/body/index.html::allnav"></div>
+<div  class="col-md-8 rightDiv">
+    <form th:action="@{/body/mingshi}" method="post">
+        <label>请在这里输入您遇到的问题</label>
+        <textarea class="form-control" style="height: 300px;" name="info"></textarea>
+        <button type="submit" class="btn btn-primary" style="margin-top:30px;width: 60%;margin-left:50px;">提交</button>
+    </form>
+    <p style="color:red;" th:text="${msg}"></p>
+</div>
+
+</body>
+</html>

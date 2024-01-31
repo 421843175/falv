@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.falv.mapper.UserreadMapper">
+  <resultMap id="BaseResultMap" type="com.falv.pojo.Userread">
+    <result column="user" jdbcType="VARCHAR" property="user" />
+    <result column="title" jdbcType="VARCHAR" property="title" />
+    <result column="body" jdbcType="VARCHAR" property="body" />
+    <result column="read" jdbcType="BIT" property="read" />
+  </resultMap>
+  <insert id="insert" parameterType="com.falv.pojo.Userread">
+    insert into userread (user, title, body, 
+      read)
+    values (#{user,jdbcType=VARCHAR}, #{title,jdbcType=VARCHAR}, #{body,jdbcType=VARCHAR}, 
+      #{read,jdbcType=BIT})
+  </insert>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select user, title, body, read
+    from userread
+  </select>
+
+  <select id="selectOne" resultType="com.falv.pojo.Userread">
+    select * from userread where user=#{username}
+  </select>
+
+  <select id="countread" resultType="int">
+    select count(*) from userread where user=#{username} and `read`=0;
+  </select>
+
+  <update id="updateSetRead">
+    update userread set `read`=1 where id=#{id}
+  </update>
+</mapper>

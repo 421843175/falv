@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.falv.mapper.UsermassageMapper">
+  <resultMap id="BaseResultMap" type="com.falv.pojo.Usermassage">
+    <result column="username" jdbcType="VARCHAR" property="username" />
+    <result column="message" jdbcType="VARCHAR" property="message" />
+    <result column="date" jdbcType="VARCHAR" property="date" />
+  </resultMap>
+  <insert id="insert" parameterType="com.falv.pojo.Usermassage">
+    insert into usermassage values (#{username}, #{message}, #{date})
+  </insert>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select username, message, date
+    from usermassage
+  </select>
+</mapper>

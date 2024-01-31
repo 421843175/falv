@@ -1,0 +1,66 @@
+.setPersonal {
+    margin-top: 40px;
+    margin-bottom: 150px;
+    position: relative
+}
+
+.introduction {
+    width: 393px;
+    height: 133px;
+    border: 1px solid #ddd
+}
+
+.job-select {
+    width: 138px
+}
+
+.job-select select {
+    width: 157px
+}
+
+.ext_submit {
+    margin-left: 183px
+}
+
+.form-list .ok-text {
+    padding-left: 25px;
+    line-height: 20px;
+    display: inline-block;
+    height: 20px;
+    font-weight: normal;
+    background: url(http://s17.mogucdn.com/p1/160725/idid_ifrdgzjwg42dqodghezdambqmeyde_25x40.png) 0 -20px no-repeat
+}
+
+.form-list .error-text {
+    color: #f36;
+    background: url(http://s17.mogucdn.com/p1/160725/idid_ifrdgzjwg42dqodghezdambqmeyde_25x40.png) 0 0 no-repeat
+}
+
+.form-list .error+strong {
+    padding-left: 25px
+}
+
+.form-list .introduction-error {
+    margin-left: 83px;
+    padding: 0;
+    background: none
+}
+
+.form-list #datepicker {
+    position: relative
+}
+
+.form-list .ui-datepicker {
+    position: absolute;
+    left: 83px;
+    top: 33px
+}
+
+.submitError {
+    color: #666666;
+    margin-left: 10px
+}
+
+.color-pink {
+    color: #f36
+}

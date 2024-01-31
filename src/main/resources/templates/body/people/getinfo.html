@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8"/>
+    <title>个人中心</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/base.css}"/>
+    <link rel="stylesheet" type="text/css" th:href="@{/account/common.css}"/>
+    <link rel="stylesheet" type="text/css" th:href="@{/account/datepicker.css}"/>
+    <link rel="stylesheet" type="text/css" th:href="@{/account/setPersonal.css}"/>
+
+
+</head>
+<style>
+    ul li {
+        margin-top: 50px;
+    }
+</style>
+
+<body>
+
+<div class="settings">
+    <div class="pcenter_navBar">
+        <div class="pcenter_userhead">
+            <div class="pcenter_userhead_content">
+                <div class="username">个人设置</div>
+            </div>
+        </div>
+        <ul class="pcenter_navBar_ul" style="margin-top:-10px;">
+
+
+            <!-- <li> <a class="disable-a">退款维权</a> <ul> <li><a class="menu_refund" href="undefined/refund/list/">我的投诉</a></li> <li><a class="menu_complain" href="undefined/complainnew/list/">我的举报</a></li> </ul></li> -->
+            <li>
+                <a class="disable-a">账号管理</a>
+                <ul>
+                    <li>
+                        <a class="menu_setPersonal" th:href="@{/body/people/setPersonal}">我的信息</a></li>
+
+                    <li>
+                        <a class="menu_setAvatar" th:href="@{/body/people/setpassword}">修改密码</a></li>
+                </ul>
+            </li>
+            <li>
+                <a class="disable-a">信息管理</a>
+                <ul>
+                    <li>
+                        <a class="menu_setPassword" th:href="@{/body/people/getinfo}">收件箱</a></li>
+                    </li>
+                </ul>
+        </ul>
+    </div>
+
+    <div class="settings_box">
+        <strong class="settings_title" th:text="'收件箱('+${userreadcount}+'封未读)'">收件箱(0封未读)</strong>
+        <fieldset class="setPersonal">
+            <ul th:each="user:${userread}">
+                <li>
+                    <h1 th:text="${user.getTitle()}"></h1>
+
+                    <div th:text="${user.getBody()}"></div>
+                    <a style="background-color: transparent;border:1px solid gainsboro; float:right;" th:text="${user.getRead()==true?'已读':'未读'}"  th:href="${user.read == true} ? null : @{/body/people/du(id=${user.getId()})}"></a>
+                </li>
+
+            </ul>
+        </fieldset>
+    </div>
+
+</div>
+
+
+</body>
+
+</html>

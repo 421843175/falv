@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+     .imgdiv {
+        margin-top: 200px;
+        margin-left: 20%;
+        overflow :hidden;
+        
+    }
+     a {
+         color:rgb(75, 114, 210);
+         text-decoration: none;
+     }
+     input {
+         width: 200px;
+         margin-top:5px;
+         height: 30px;
+         border: 1px solid grey;
+     }
+     .bigLogin{
+         background-color: white;
+         margin-left: 20px;
+     }
+     .login {
+         background-color: rgb(75, 114, 210);
+         color:white;
+     }
+
+</style>
+<script src="jq.min.js"></script>
+<body>
+    <div class="imgdiv">
+        <img th:src="@{/img/tp.png}" width="300px" height="300px" style="float:left; margin-right: 50px;">
+<!--        <div class="loginModel" th:replace="sonLogin.html::bigLogin">-->
+
+<!--        </div>      -->
+        <div class="bigLogin">
+            <h4 style="margin-left:10px;">用户注册</h4>
+            <form th:action="@{/register}" method="post">
+                <p style="color:red;" th:text="${msg}" th:if="${not #strings.isEmpty(msg)}"></p>
+                <input type="text" class="zm" placeholder="账号" name="username"><br>
+                <input type="password" class="zm" placeholder="密码" name="pass1"><br>
+                <input type="password" class="zm" placeholder="确认密码" name="pass2"><br>
+
+                <br>
+                <input type="submit" value="注册" class="login"> <br>
+            </form>
+        </div>
+
+<!--    <div  style="margin-top:50px;"><a href="">管理员管理后台</a></div>-->
+<!--    <script>-->
+<!--       $(document).ready(function(){-->
+<!--    $('.loginModel').load('JULogin.html');-->
+<!--})-->
+<!--    </script>-->
+    </div>
+</body>
+</html>

@@ -1,0 +1,1055 @@
+html,
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+dl,
+li,
+dt,
+dd,
+p,
+blockquote,
+pre,
+form,
+fieldset,
+table,
+th,
+td,
+map {
+    margin: 0;
+    padding: 0
+}
+
+* html,
+* html body {
+    background-image: url(about:blank);
+    background-attachment: fixed
+}
+
+ul,
+ol,
+dl,
+li {
+    list-style: none
+}
+
+pre {
+    white-space: pre-wrap;
+    word-wrap: break-word
+}
+
+h3 {
+    _zoom: 1
+}
+
+input,
+textarea {
+    resize: none;
+    outline: none;
+    font-family: Arial;
+    word-wrap: break-word
+}
+
+fieldset,
+img {
+    border: 0
+}
+
+legend {
+    display: none
+}
+
+a {
+    color: #666;
+    text-decoration: none
+}
+
+a:hover {
+    color: #f36
+}
+
+a:focus {
+    outline: none
+}
+
+em {
+    font-style: normal
+}
+
+html {
+    _overflow-x: hidden
+}
+
+body {
+    background-color: #f2f0f0;
+    color: #666;
+    font-size: 12px;
+    font-family: Arial, 'Microsoft YaHei'
+}
+
+.clear_f {
+    clear: both;
+    overflow: hidden;
+    height: 0
+}
+
+#com-topbar {
+    min-width: 1260px;
+    background-color: #F8F8F8;
+    height: 30px;
+    line-height: 30px
+}
+
+#com-topbar .inner {
+    width: 1200px;
+    margin: 0 auto;
+    text-align: right
+}
+
+#com-topbar .inner>ul>li {
+    display: inline-block;
+    text-align: center
+}
+
+#com-topbar a {
+    border-right: 1px dotted #ccc;
+    padding: 0 18px;
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    cursor: pointer;
+    color: #666
+}
+
+#com-topbar .nick {
+    padding-left: 0
+}
+
+#com-topbar a:hover {
+    color: #f36
+}
+
+#com-topbar .homepage {
+    float: left
+}
+
+#com-topbar .index {
+    padding-right: 100px;
+    border-right: none
+}
+
+#com-topbar em {
+    display: inline-block;
+    width: 18px;
+    height: 16px;
+    vertical-align: sub;
+    margin-right: 7px;
+    background: url(http://s17.mogucdn.com/p1/160726/idid_ifrtemrqgi4tazlghezdambqhayde_241x16.png) no-repeat
+}
+
+#com-topbar .last {
+    border-right: none
+}
+
+#com-topbar li.drop {
+    position: relative;
+    z-index: 600
+}
+
+#com-topbar .down {
+    position: absolute;
+    top: 30px;
+    z-index: 999;
+    background-color: #F8F8F8;
+    padding: 8px 0;
+    border: 1px solid #eee;
+    line-height: 20px;
+    display: none;
+    margin-left: -4px
+}
+
+#com-topbar .cart-wrapper .hidden {
+    display: none
+}
+
+#com-topbar .cart-wrapper .down {
+    left: -50%
+}
+
+#com-topbar .drop:hover .down {
+    display: block
+}
+
+#com-topbar .down li {
+    text-align: left
+}
+
+#com-topbar .down a {
+    margin-bottom: 3px;
+    border: none
+}
+
+#com-topbar .cart-num {
+    color: #fff;
+    background-color: #FF3366;
+    padding: 0 6px
+}
+
+#com-topbar .cart-goods {
+    width: 266px;
+    padding: 0 20px;
+    background-color: #F8F8F8;
+    border-bottom: 1px dotted #ccc;
+    padding-bottom: 20px
+}
+
+#com-topbar .cart-goods li {
+    width: 100%;
+    padding: 12px 0
+}
+
+#com-topbar .cart-goods .cart-goods-title {
+    display: inline-block;
+    width: 156px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    vertical-align: bottom
+}
+
+#com-topbar .cart-goods .cart-goods-price {
+    float: right
+}
+
+#com-topbar .cart-goods .cart-goods-desc {
+    margin-left: 10px;
+    padding-left: 50px
+}
+
+#com-topbar .cart-goods .cart-goods-img {
+    float: left;
+    width: 40px;
+    height: 40px
+}
+
+#com-topbar .cart-goods p {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis
+}
+
+#com-topbar .cart-goods .cart-goods-info {
+    color: #ccc
+}
+
+#com-topbar .cart-account {
+    overflow: hidden;
+    padding: 10px 20px 0
+}
+
+#com-topbar .cart-account span {
+    float: left
+}
+
+#com-topbar .cart-account a {
+    padding: 0;
+    color: #f36
+}
+
+#com-topbar a.check-cart {
+    display: inline-block;
+    float: right;
+    color: #f36;
+    border: 1px solid #f36;
+    padding: 0 10px
+}
+
+#com-topbar em.weixin {
+    background-position: -25px 0
+}
+
+#com-topbar em.qq {
+    background-position: -52px 0
+}
+
+#com-topbar em.collect {
+    background-position: -76px 0
+}
+
+#com-topbar em.cart {
+    background-position: -102px 0
+}
+
+#com-topbar em.order {
+    background-position: -130px 0
+}
+
+#com-topbar em.arrow {
+    width: 6px;
+    margin-left: 10px;
+    background-position: -180px 0
+}
+
+#com-topbar em.del-cart-goods {
+    margin-left: 24px;
+    background-position: -152px 0
+}
+
+#com-topbar .face {
+    display: inline-block;
+    vertical-align: middle;
+    height: 19px;
+    width: 19px;
+    border-radius: 9px;
+    padding-right: 2px
+}
+
+#com-topbar .hidden {
+    display: none
+}
+
+#com-search {
+    min-width: 1260px;
+    background-color: #fff
+}
+
+#com-search .inner {
+    width: 1200px;
+    height: 120px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 500
+}
+
+#com-search .logo {
+    float: left;
+    margin-top: 40px
+}
+
+#com-search .sublogo {
+    float: left;
+    margin-top: 40px;
+    margin-left: 15px
+}
+
+#com-search .search {
+    width: 520px;
+    position: absolute;
+    top: 21px;
+    left: 50%;
+    margin-left: -240px
+}
+
+#com-search .search-tab span {
+    display: inline-block;
+    text-align: center;
+    width: 56px;
+    background-color: #f2f2f2;
+    line-height: 24px;
+    cursor: pointer
+}
+
+#com-search .search-tab .active {
+    background-color: #FF3366;
+    color: #fff
+}
+
+#com-search .search-box {
+    height: 30px;
+    position: relative
+}
+
+#com-search .search-txt {
+    float: left;
+    border: 2px solid #FF3366;
+    width: 437px;
+    line-height: 28px;
+    height: 28px;
+    padding: 0;
+    margin: 0;
+    padding-left: 8px
+}
+
+#com-search .search-btn {
+    float: left;
+    width: 70px;
+    height: 32px;
+    background: #FF3366 url(http://d04.res.meilishuo.net/pic/_o/a4/d5/6570b3774433f4b0cf6b6eb8d01e_19_17.c5.png) no-repeat center;
+    cursor: pointer
+}
+
+#com-search .hotword {
+    padding-top: 12px
+}
+
+#com-search .hotword a {
+    padding-right: 10px
+}
+
+#com-search .suggest-box {
+    border: 1px solid #dddddd;
+    width: 447px;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    top: 31px;
+    z-index: 999;
+    display: none
+}
+
+#com-search .suggest-box .item {
+    line-height: 20px;
+    padding: 2px 10px;
+    cursor: pointer;
+    color: #666
+}
+
+#com-search .suggest-box div.active {
+    background-color: #F2F0F1;
+    color: #FF3366
+}
+
+#com-search .spread {
+    float: right;
+    margin-top: 3px
+}
+
+#com-search .tags {
+    float: right
+}
+
+#com-search .tags span {
+    color: #999999;
+    margin-right: 4px
+}
+
+#com-search .tags span:hover {
+    color: #FF3366
+}
+
+img {
+    display: block
+}
+
+.nav_main_box {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-bottom: 1px solid #ff3366
+}
+
+.nav_main_box .nav_main {
+    width: 1200px;
+    height: 40px;
+    font-size: 14px;
+    margin-left: auto;
+    margin-right: auto;
+    *zoom: 1
+}
+
+.nav_main_box .nav_main:after {
+    clear: both;
+    content: ".";
+    display: block;
+    visibility: hidden;
+    height: 0
+}
+
+.nav_main_box .nav_main .nav_tab {
+    float: left;
+    margin: 0 40px
+}
+
+.nav_main_box .nav_main .nav_tab .active {
+    color: #ff3366
+}
+
+.nav_main_box .nav_main .all {
+    float: left;
+    width: 285px;
+    background-color: #ff3366;
+    color: #fff;
+    margin-left: 0;
+    margin-right: 40px;
+    position: relative
+}
+
+.nav_main_box .attr_box {
+    display: none;
+    width: 285px;
+    position: absolute;
+    left: 0;
+    top: 41px;
+    z-index: 10
+}
+
+.nav_main_box .attr_box .sec_attr {
+    background-color: #FFF;
+    border: 1px solid #ff3366;
+    float: left;
+    width: 263px;
+    border-top: 0;
+    padding-right: 20px
+}
+
+.nav_main_box .attr_box .sec_attr .list {
+    position: relative;
+    margin-left: 20px;
+    border-bottom: 1px dashed #ccc
+}
+
+.nav_main_box .attr_box .sec_attr .list .nav_tle {
+    width: 29px;
+    overflow: hidden;
+    font-size: 14px;
+    float: left;
+    margin-right: 20px;
+    font-weight: normal
+}
+
+.nav_main_box .attr_box .sec_attr .list p.listP {
+    width: 180px;
+    overflow: hidden;
+    float: left;
+    font-size: 12px;
+    color: #666
+}
+
+.nav_main_box .attr_box .sec_attr .list p.listP a {
+    float: left;
+    margin-right: 10px
+}
+
+.nav_main_box .attr_box .sec_attr .list p.listP .red {
+    color: #ff3366
+}
+
+.nav_main_box .attr_box .sec_attr .list .corner {
+    font-size: 14px;
+    color: #999;
+    float: right;
+    margin-right: 20px;
+    margin-top: 14px
+}
+
+.nav_main_box .attr_box .sec_attr .list_cont {
+    position: relative;
+    z-index: 8;
+    width: 263px;
+    height: 38px;
+    line-height: 38px;
+    overflow: hidden;
+    *zoom: 1
+}
+
+.nav_main_box .attr_box .sec_attr .list_cont:after {
+    clear: both;
+    content: ".";
+    display: block;
+    visibility: hidden;
+    height: 0
+}
+
+.nav_main_box .attr_box .sec_attr .active {
+    background-color: #FFF;
+    border-top: 1px solid #ff3366;
+    border-bottom: 1px solid #ff3366;
+    margin: 0;
+    padding-left: 20px;
+    margin-top: -1px;
+    width: 264px
+}
+
+.nav_main_box .attr_box .sec_attr .active .corner {
+    color: #f69;
+    right: 15px;
+    margin-right: 20px
+}
+
+.nav_main_box .attr_box .sec_attr .active .list_cont {
+    margin-right: -1px;
+    border-right: 1px solid #fff
+}
+
+.nav_main_box .attr_box .sec_attr .last {
+    border-bottom: none
+}
+
+.nav_main_box .nav_list {
+    display: none;
+    border: 1px solid #ff3366;
+    background-color: #FFF;
+    padding-left: 20px;
+    width: 238px;
+    z-index: 4;
+    padding-bottom: 10px;
+    position: absolute;
+    top: -1px;
+    right: -259px
+}
+
+.nav_main_box .nav_list li {
+    margin: 0
+}
+
+.nav_main_box .nav_list h4 {
+    font-size: 14px;
+    height: 20px;
+    line-height: 20px;
+    padding-top: 12px;
+    padding-bottom: 6px;
+    text-align: left;
+    font-weight: normal
+}
+
+.nav_main_box .nav_list p {
+    line-height: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 15px
+}
+
+.nav_main_box .nav_list p a {
+    float: left;
+    margin-right: 14px;
+    color: #666
+}
+
+.nav_main_box .nav_list p a:hover {
+    color: #ff3366
+}
+
+.nav_main_box .nav_list p .red {
+    color: #ff3366
+}
+
+.sec_nav {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #ff3366;
+    margin-bottom: 10px;
+    background-color: #fff
+}
+
+.sec_nav ul {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    *zoom: 1
+}
+
+.sec_nav ul:after {
+    clear: both;
+    content: ".";
+    display: block;
+    visibility: hidden;
+    height: 0
+}
+
+.sec_nav ul li {
+    float: left
+}
+
+.sec_nav ul li a {
+    float: left;
+    height: 38px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    padding: 0 15px;
+    margin-right: 12px
+}
+
+.sec_nav ul li a:hover {
+    color: #ff3366;
+    border-bottom: 2px solid #ff3366
+}
+
+.sec_nav ul li .active {
+    color: #ff3366;
+    border-bottom: 2px solid #ff3366
+}
+
+.sec_nav_fix {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000
+}
+
+#com-foot {
+    min-width: 1260px;
+    margin-top: 15px;
+    padding-top: 30px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd
+}
+
+#com-foot .inner {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden
+}
+
+#com-foot .flist {
+    float: left;
+    margin-right: 104px;
+    margin-bottom: 20px;
+    line-height: 26px
+}
+
+#com-foot .aboutus {
+    margin-right: 0
+}
+
+#com-foot .aboutus a {
+    vertical-align: middle
+}
+
+#com-foot .flist h4 {
+    font-size: 16px;
+    line-height: 28px
+}
+
+#com-foot .flist div {
+    margin-top: 12px
+}
+
+#com-foot .custem {
+    padding-left: 48px;
+    line-height: 25px
+}
+
+#com-foot .i-sina,
+#com-foot .i-qzone,
+#com-foot .i-tencent {
+    background: url("http://d05.res.meilishuo.net/pic/_o/15/a0/83e2e4569fca186be6a8e4286d0b_74_18.c5.png") no-repeat;
+    height: 18px;
+    width: 18px;
+    margin-top: 5px;
+    margin-right: 5px;
+    float: left;
+    background-position: 0 0
+}
+
+#com-foot .i-qzone {
+    background-position: -28px 0
+}
+
+#com-foot .i-tencent {
+    background-position: -56px 0
+}
+
+#com-foot .follow {
+    display: none
+}
+
+#com-foot .service {
+    text-align: center;
+    margin-left: 228px;
+    margin-right: 55px
+}
+
+#com-foot .qrcode {
+    display: inline-block;
+    margin-top: 13px
+}
+
+#com-foot .last {
+    text-align: center;
+    float: right;
+    margin-right: 0
+}
+
+#com-foot .client {
+    background: url("http://i.meilishuo.net/css/images/header/mls_global140607.png") no-repeat 0 -401px;
+    display: block;
+    height: 100px;
+    margin-top: 10px;
+    width: 132px
+}
+
+#com-foot .more {
+    float: right
+}
+
+#com-foot .record {
+    clear: both;
+    border-top: 1px solid #e6e6e6;
+    line-height: 22px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    padding: 12px 192px;
+    text-align: center
+}
+
+.biu-sidebar {
+    width: 38px;
+    height: 100%;
+    border-left: 1px solid #ddd;
+    background-color: #F6F6F6;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 999
+}
+
+.biu-sidebar .biu-options {
+    position: absolute;
+    top: 62px;
+    border-top: 1px solid #ddd
+}
+
+.biu-sidebar .biu-options .biu-download,
+.biu-sidebar .biu-options .biu-cart,
+.biu-sidebar .biu-options .biu-coupon,
+.biu-sidebar .biu-options .biu-mark,
+.biu-sidebar .biu-options .biu-service,
+.biu-sidebar .biu-options .biu-footprint {
+    border-bottom: 1px solid #ddd;
+    line-height: 1.2
+}
+
+.biu-sidebar .biu-options .biu-download,
+.biu-sidebar .biu-options .biu-cart a,
+.biu-sidebar .biu-options .biu-coupon a,
+.biu-sidebar .biu-options .biu-mark a,
+.biu-sidebar .biu-options .biu-service a,
+.biu-sidebar .biu-options .biu-footprint a {
+    display: block;
+    width: 10px;
+    padding-top: 36px;
+    padding-right: 14px;
+    padding-left: 14px;
+    cursor: pointer;
+    line-height: 1.2
+}
+
+.biu-sidebar .biu-options .biu-cart a:hover,
+.biu-sidebar .biu-options .biu-coupon a:hover,
+.biu-sidebar .biu-options .biu-mark a:hover,
+.biu-sidebar .biu-options .biu-service a:hover,
+.biu-sidebar .biu-options .biu-footprint a:hover {
+    color: #fff;
+    background-color: #F33866
+}
+
+.biu-sidebar .biu-options .biu-download {
+    height: 70px;
+    background: url(http://i.meilishuo.net/css/images/biuSidebar/biu-phone-1.png) no-repeat 13px 10px;
+    position: relative;
+    padding-top: 41px
+}
+
+.biu-sidebar .biu-options .biu-download span {
+    width: 40px;
+    height: 20px;
+    display: inline-block;
+    margin-top: 12px;
+    margin-left: -18px;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -moz-transform: rotate(90deg)
+}
+
+.biu-sidebar .biu-options .biu-download:hover {
+    background: url(http://i.meilishuo.net/css/images/biuSidebar/biu-phone-white-1.png) no-repeat 13px 10px;
+    background-color: #F33866;
+    color: #fff
+}
+
+.biu-sidebar .biu-options .biu-cart,
+.biu-sidebar .biu-options .biu-coupon,
+.biu-sidebar .biu-options .biu-service {
+    position: relative
+}
+
+.biu-sidebar .biu-options .biu-cart a {
+    height: 61px;
+    background: url(http://i.meilishuo.net/css/images/biuSidebar/biu-cart.png) no-repeat 10px 9px
+}
+
+.biu-sidebar .biu-options .biu-cart .cart-num,
+.biu-sidebar .biu-options .biu-coupon .coupon-num {
+    background-color: #F33866;
+    color: #fff;
+    padding: 0 4px;
+    border-radius: 10px;
+    display: block;
+    position: absolute;
+    top: 4px;
+    right: 2px;
+    z-index: 1000
+}
+
+.biu-sidebar .biu-options .biu-service .biu-service-num-circle {
+    background-color: #F33866;
+    color: #fff;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    z-index: 1000
+}
+
+.biu-sidebar .biu-options .biu-cart a:hover {
+    background-image: url(http://i.meilishuo.net/css/images/biuSidebar/biu-cart-white.png);
+    background-repeat: no-repeat;
+    background-position: 10px 9px
+}
+
+.biu-sidebar .biu-options .biu-cart a:hover .cart-num {
+    background-color: #fff;
+    color: #F33866
+}
+
+.biu-sidebar .biu-options .biu-coupon a {
+    height: 56px;
+    background: url(http://i.meilishuo.net/css/images/biuSidebar/biu-coupon.png) no-repeat 10px 15px
+}
+
+.biu-sidebar .biu-options .biu-coupon a:hover {
+    background-image: url(http://i.meilishuo.net/css/images/biuSidebar/biu-coupon-white.png);
+    background-repeat: no-repeat;
+    background-position: 10px 15px
+}
+
+.biu-sidebar .biu-options .biu-coupon a:hover .coupon-num {
+    background-color: #fff;
+    color: #F33866
+}
+
+.biu-sidebar .biu-options .biu-mark a {
+    height: 46px;
+    background: url(http://i.meilishuo.net/css/images/biuSidebar/biu-mark-new.png) no-repeat 10px 15px;
+    padding-top: 41px
+}
+
+.biu-sidebar .biu-options .biu-mark a:hover {
+    background-image: url(http://i.meilishuo.net/css/images/biuSidebar/biu-mark-white.png);
+    background-repeat: no-repeat;
+    background-position: 10px 15px
+}
+
+.biu-sidebar .biu-options .biu-service a {
+    height: 52px;
+    background: url(http://i.meilishuo.net/css/images/biuSidebar/biu-service.png) no-repeat 11px 15px
+}
+
+.biu-sidebar .biu-options .biu-service a:hover {
+    background-image: url(http://i.meilishuo.net/css/images/biuSidebar/biu-service-white.png);
+    background-repeat: no-repeat;
+    background-position: 11px 15px
+}
+
+.biu-sidebar .biu-options .biu-service a:hover .service-num {
+    background-color: #fff;
+    color: #F33866
+}
+
+.biu-sidebar .biu-options .biu-footprint a {
+    height: 49px;
+    background: url(http://i.meilishuo.net/css/images/biuSidebar/biu-footprint-new.png) no-repeat 12px 15px;
+    padding-top: 44px
+}
+
+.biu-sidebar .biu-options .biu-footprint a:hover {
+    background-image: url(http://i.meilishuo.net/css/images/biuSidebar/biu-footprint-white-new.png);
+    background-repeat: no-repeat;
+    background-position: 12px 15px;
+    background-color: #F33866
+}
+
+.biu-sidebar .biu-options .biu-download .mls-qrcode {
+    width: 140px;
+    height: 140px;
+    padding: 13px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    position: absolute;
+    right: 38px;
+    top: 0;
+    display: none
+}
+
+.biu-sidebar .biu-options .biu-download .mls-qrcode:after,
+.biu-sidebar .biu-options .biu-download .mls-qrcode:before {
+    border: solid transparent;
+    content: '';
+    height: 0;
+    left: 100%;
+    position: absolute;
+    width: 0
+}
+
+.biu-sidebar .biu-options .biu-download .mls-qrcode:after {
+    border-width: 10px;
+    border-left-color: #fff;
+    top: 55px
+}
+
+.biu-sidebar .biu-options .biu-download .mls-qrcode:before {
+    border-width: 12px;
+    border-left-color: #ddd;
+    top: 53px
+}
+
+.biu-sidebar .biu-options .biu-download .mls-qrcode img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 0;
+    top: 0
+}
+
+.biu-sidebar .biu-go2top {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 38px;
+    height: 40px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    z-index: 1000;
+    display: none;
+    background-image: url(http://i.meilishuo.net/css/images/biuSidebar/biu-go2top.png);
+    background-repeat: no-repeat;
+    background-position: 12px 16px;
+    background-color: #F8F8F8
+}
+
+.biu-sidebar .biu-go2top:hover {
+    background-color: #F33866;
+    cursor: pointer;
+    background-image: url(http://i.meilishuo.net/css/images/biuSidebar/biu-go2top-white.png);
+    background-repeat: no-repeat;
+    background-position: 12px 16px
+}
+
+.pro_ad_banner {
+    display: block;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.pro_ad_banner img {
+    width: 1200px
+}

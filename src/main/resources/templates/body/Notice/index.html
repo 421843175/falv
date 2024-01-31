@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+</style>
+<link rel="stylesheet" th:href="@{/css/body.css}">
+
+<body>
+<div th:include="/body/index.html::allnav"></div>
+<div  class="col-md-8 rightDiv">
+    <div class="jumbotron" style="margin-top:20px;">
+        <h1 class="display-4">法律援助系统开通了</h1>
+        <p class="lead">法律援助系统开通了，居民可以更加方便的通过这个平台诉求法律援助</p>
+    </div>
+</div>
+</body>
+</html>

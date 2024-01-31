@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+        <head>
+          <meta charset="utf-8" />
+          <title>个人中心</title>
+          <link rel="stylesheet" type="text/css" th:href="@{/css/base.css}" />
+          <link rel="stylesheet" type="text/css" th:href="@{/account/common.css}" />
+          <link rel="stylesheet" type="text/css" th:href="@{/account/datepicker.css}" />
+          <link rel="stylesheet" type="text/css" th:href="@{/account/setPersonal.css}" />
+        </head>
+        
+        <body>
+
+          <div class="settings">
+            <div class="pcenter_navBar">
+              <div class="pcenter_userhead">
+                <div class="pcenter_userhead_content">
+                  <div class="username">个人设置</div></div>
+              </div>
+              <ul class="pcenter_navBar_ul" style="margin-top:-10px;">
+
+
+                <!-- <li> <a class="disable-a">退款维权</a> <ul> <li><a class="menu_refund" href="undefined/refund/list/">我的投诉</a></li> <li><a class="menu_complain" href="undefined/complainnew/list/">我的举报</a></li> </ul></li> -->
+                <li>
+                  <a class="disable-a">账号管理</a>
+                  <ul>
+                    <li>
+                      <a class="menu_setPersonal" th:href="@{/body/people/setPersonal}">我的信息</a></li>
+
+                    <li>
+                      <a class="menu_setAvatar" th:href="@{/body/people/setpassword}">修改密码</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a class="disable-a">信息管理</a>
+                  <ul>
+                    <li>
+                      <a class="menu_setPassword" th:href="@{/body/people/getinfo}">收件箱</a></li>
+                    </li>
+                  </ul>
+              </ul>
+            </div>
+
+            <div class="settings_box">
+              <strong class="settings_title">我的信息</strong>
+              <fieldset class="setPersonal">
+                <form id="setPersonForm" method="post"  th:action="@{/body/people/postsetPersonal}">
+                  <div class="form-list">
+                    <label class="account-label">真实姓名</label>
+                    <input id="true_name" name="relname" autocomplete="off" class="l_ipt" type="text" th:value="${user.getRelname()}" />
+                    <strong></strong>
+                  </div>
+                  <div class="form-list">
+                    <label class="account-label">昵称</label>
+                    <input id="nickname" name="nick" autocomplete="off" class="l_ipt" type="text" th:value="${user.getNick()}" />
+                    <strong></strong>
+                  </div>
+                  <div class="gender" id="gender">
+                    <label class="account-label">性别</label>
+                    <input name="sex" id="female" type="radio" value="0" class="regular-radio" th:checked="${user.getSex()==0}" />
+                    <label for="female" class="regular-radio-label"></label>
+                    <span>女</span>
+                    <input name="sex" id="male" type="radio" value="1" class="regular-radio" th:checked="${user.getSex()==1}"/>
+                    <label class="regular-radio-label" for="male"></label>
+                    <span>男</span>
+                    <strong></strong>
+                  </div>
+
+                  <div class="form-list" id="birthday-list">
+                    <label class="account-label">生日</label>
+                    <input id="birthday"  class=" l_ipt" name="birth"   type="date" th:value="${user.getBirth()}" />
+                    <strong></strong>
+                  </div>
+
+                  <div class="form-list">
+                    <label class="account-label">个人说明</label>
+                    <textarea id="introduction" class="introduction" name="info" th:text="${user.getInfo()}"></textarea>
+                    <br/>
+                    <strong class="introduction-error"></strong>
+                  </div>
+                  <input type="submit" value="确 认" id="submit" class="ext_submit" />
+                  <span class="submitError"></span>
+                </form>
+              </fieldset>
+              <p style="color:red;" th:text="${msg}"></p>
+            </div>
+
+          </div>
+
+          
+        </body>
+        
+        </html>

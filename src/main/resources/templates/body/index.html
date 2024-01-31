@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>法律援助</title>
+</head>
+<!--<style>-->
+
+<!--</style>-->
+<link rel="stylesheet" th:href="@{/css/body.css}">
+
+<body>
+<div th:fragment="allnav">
+    <div class="col-lg-12 ss upDiv">
+        &nbsp;&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-home">法律援助系统</span>
+      <a th:href="@{/body/people/getinfo}" target="_blank"> <span class="glyphicon glyphicon-user user"></span></a>
+    </div>
+    <div class="bottomDiv">
+        <div class="col-md-2 leftDiv">
+            <ul>
+                <li class="lil"><a th:href="@{/body/Notice}" target="zou" style="color:black;" class="nav">公告</a></li>
+                <li class="lil"><a th:href="@{/body/Evaluation}" target="zou" class="nav">评价和建议</a></li>
+                <li class="lil">
+                    <a href="#anjian" data-toggle="collapse"> 分类咨询</a>
+                
+                    <ul id="anjian" class="collapse">
+                        <li class="lil"><a th:href="@{/body/case/xingshi}" target="zou" class="nav">&nbsp;&nbsp;刑事案件</a></li>
+                        <li class="lil"><a th:href="@{/body/case/mingshi}" target="zou" class="nav">&nbsp;&nbsp;民事案件</a></li>
+                        <li class="lil"><a th:href="@{/body/case/jingji}" target="zou" class="nav">&nbsp;&nbsp;经济案件</a></li>
+                    </ul>
+                </li>
+                </li>
+
+                <li class="lil"><a th:href="@{/body/info}" target="zou" class="nav">预约案件</a></li>
+            </ul>
+        </div>
+
+
+    </div>
+</div>
+    <div class="col-md-8 rightDiv">
+        <div class="jumbotron" style="margin-top:20px;">
+            <h1 class="display-4">法律援助系统开通了</h1>
+            <p class="lead">法律援助系统开通了，居民可以更加方便的通过这个平台诉求法律援助</p>
+        </div>
+    </div>
+</body>
+
+</html>

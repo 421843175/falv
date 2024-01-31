@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    background-color: rgb(247, 247, 247);
+}
+
+.ss {
+    font-size: 18px;
+    font-family: '宋体';
+    background-color: white;
+}
+
+.leftDiv {
+    background-color: white;
+    height: 600px;
+    margin-left:26px;
+
+    border-radius: 21px;
+}
+
+.rightDiv {
+    background-color: white;
+    margin-left: 30px;
+    height: 600px;
+}
+
+
+.lil a {
+    display: inline-block;
+    font-size: 18px;
+    height: 60px;
+    width: 107%;
+    line-height: 60px;
+    color: rgb(148, 147, 146);
+    text-decoration: none;
+    margin-left:-11px;
+    padding-left:10px;
+
+}
+.lil a:hover {
+    cursor: pointer;
+    color: black;
+    background-color: rgb(242,251,255);
+}
+
+
+.user {
+    margin-top: 2px;
+    float: right;
+}
+
+.user:hover {
+    cursor: pointer;
+    color: rgb(75, 114, 210);
+}
+
+.lidiv li {
+    display: none;
+}
+
+.bottomDiv{
+    padding-top:50px;
+}
+iframe{
+    overflow-x: hidden;
+}
+a{
+    color:black;
+}
+.upDiv {
+    box-shadow: 10px 10px 5px #88888848;
+}
+

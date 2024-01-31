@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<style>
+    
+</style>
+<link rel="stylesheet" th:href="@{/css/body.css}">
+
+<body>
+<div th:include="/body/index.html::allnav"></div>
+<div  class="col-md-8 rightDiv">
+<!--    文件上传一定要有enctype属性-->
+    <form th:action="@{/body/reuser}" method="post" enctype="multipart/form-data">
+
+<!--        提交方式为PUT-->
+        <input type="hidden" name="_method" value="put" />
+
+        <label> 请选择案件类型:</label>
+        <select name="type">
+            <option  value="0">经济案件</option>
+            <option  value="1">刑事案件</option>
+            <option  value="2">民事案件</option>
+          </select>
+          <br>
+        <label>请输入案件缘由</label>
+        <textarea class="form-control" style="height: 300px;" name="info"></textarea><br>
+        <label > 上传相关材料:</label><input type="file" name="userfile">
+        <button type="submit" class="btn btn-primary" style="margin-top:30px;width: 60%;margin-left:50px;">提交</button>
+    </form>
+    <p style="color:red;" th:text="${msg}"></p>
+</div>
+</body>
+</html>
